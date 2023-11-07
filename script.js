@@ -11,7 +11,7 @@ function writePassword() {
 }
 
 function generatePassword() {
-  var password = 0;
+  var password = "";
   var lowercaseChars = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
   var uppercaseChars = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
   var specCharacters = ['!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '-', '+', '=', '{', '}', '[', ']', ':', ';', '"', '\'', '<', '>', ',', '.', '?', '/', '|', '\\'];
@@ -73,13 +73,13 @@ function generatePassword() {
 
   for (var i = 0; i < passLength; i++) {
     var chars = [specCharacters[getRandomInt(specCharacters.length)], numCharacters[getRandomInt(numCharacters.length)], uppercaseChars[getRandomInt(uppercaseChars.length)], lowercaseChars[getRandomInt(lowercaseChars.length)]];
-   
-    var password = chars[getRandomInt(chars.length)];
-
-
+        //one char
+    var passString = chars[getRandomInt(chars.length)]; 
+        //password = "1", passtring = "?"
+    password = passString + password;
+      //password = "1?" passsting = "?" 
+    //make a string that is passLength long 
     
-
-    console.log(password);
   }
 
 
