@@ -72,13 +72,27 @@ function generatePassword() {
   //
 
   for (var i = 0; i < passLength; i++) {
+    var chars = [specCharacters[getRandomInt(specCharacters.length)], numCharacters[getRandomInt(numCharacters.length)], uppercaseChars[getRandomInt(uppercaseChars.length)], lowercaseChars[getRandomInt(lowercaseChars.length)]];
+   
+    var password = chars[getRandomInt(chars.length)];
+
+
     
+
+    console.log(password);
   }
 
 
 
   return password;
 }
+
+
+
+function getRandomInt(max) {
+  return Math.floor(Math.random() * max);
+}
+
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
