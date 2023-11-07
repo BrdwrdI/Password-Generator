@@ -15,7 +15,23 @@ function generatePassword() {
 
   //prompt for length
 
-  //prompt
+  var passLength = prompt("Choose a length for your password between 8 and 128 chararcters");
+
+  if (passLength > 8 && passLength < 128){
+    ;
+  } else {
+    ;
+  }
+
+  //prompt for lowercase
+
+
+
+  //promt for uppercase 
+
+  //numeric
+
+  //special characters
 
 
   return password;
