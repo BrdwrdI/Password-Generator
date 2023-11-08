@@ -34,6 +34,8 @@ function generatePassword() {
   if (lowerCase === "Yes"){
     ;
   } else {
+    //remove element from array chars on condition No
+    
     ;
   }
 
@@ -44,6 +46,8 @@ function generatePassword() {
   if (upperCase === "Yes"){
     ;
   } else {
+    //remove element from array chars on condition No
+    
     ;
   }
 
@@ -54,6 +58,8 @@ function generatePassword() {
   if (numChars === "Yes"){
     ;
   } else {
+    //remove element from array chars on condition No
+    
     ;
   }
 
@@ -64,6 +70,8 @@ function generatePassword() {
   if(specChars === "Yes"){
     ;
   } else {
+    //remove element from array chars on condition No
+    
     ;
   }
 
